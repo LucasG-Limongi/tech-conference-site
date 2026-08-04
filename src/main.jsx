@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 import Contact from "./pages/Contact"
 import Register from "./pages/Register"
 import Login from "./pages/Login"
+import NotFound from "./pages/NotFound"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/contato' element={<Contact />} />
         <Route path='/cadastro' element={<Register />} />
         <Route path='/login' element={<Login />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
