@@ -14,20 +14,37 @@ export default function Register() {
 
             <form onSubmit={handleSubmit}>
                 {/* nome */}
-                <label htmlFor="name">Nome</label>
-                <input type="text" id="name" name="name" />
+                <div className="flex flex-col">
+                    <label htmlFor="name">Nome</label>
+                    <input type="text" id="name" name="name"
+                    className="bg-blue-400 rounded
+                    shadow-purple-300"/>
+                </div>
+                
             
                 {/* email */}
-                <label htmlFor="email">E-mail</label>
-                <input type="email" id="email" name="email" />
+                <div className="flex flex-col">
+                    <label htmlFor="email">E-mail</label>
+                    <input type="email" id="email" name="email"
+                    className="bg-blue-400 rounded
+                    shadow-purple-300"/>
+                </div>
             
                 {/* senha */}
-                <label htmlFor="password">Senha</label>
-                <input type="password" id="password" name="password" />
+                <div className="flex flex-col">
+                    <label htmlFor="password">Senha</label>
+                    <input type="password" id="password"    name="password"
+                    className="bg-blue-400 rounded
+                    shadow-purple-300"/>
+                </div>
 
                 {/* confirmar senha */}
-                <label htmlFor="confirm">Confirmar senha</label>
-                <input type="password" id="confirm" name="confirm" />
+                <div className="flex flex-col">
+                    <label htmlFor="confirm">Confirmar senha</label>
+                    <input type="password" id="confirm"     name="confirm"
+                    className="bg-blue-400 rounded
+                    shadow-purple-300"/>
+                </div>
                 <br />
 
                 {/* demais campos: e-mail, senha e confirmar senha */}
