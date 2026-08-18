@@ -18,6 +18,11 @@ export default function Home() {
                 : "bg-amber-800 p-2 my-2 rounded-4xl text-center content-center")}>
                     Contato
                 </NavLink>
+
+                <NavLink to="/login"
+                className="bg-amber-800 p-2 my-2 rounded-4xl text-center content-center">
+                    Entrar
+                </NavLink>
             </nav>
 
             <h1>Início</h1><br />
