@@ -4,12 +4,16 @@ import Footer from '../components/Footer.jsx'
 
 export default function SiteLayout() {
     return (
-        <div className="max-w-3xl mx-auto py-8">
+        <div className="pt-8 flex flex-col min-h-screen"> {/* className="max-w-3xl mx-auto py-8"> */}
             <Header />
 
-            <Outlet />
+            <div className='self-center px-6 py-3'>
+                <Outlet />
+            </div>
             
-            <Footer />
+            <div className='relative bottom-0 mt-auto'>
+                <Footer />
+            </div>
         </div>
     )
 }
