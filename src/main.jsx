@@ -9,6 +9,7 @@ import Contact from "./pages/Contact"
 import Register from "./pages/Register"
 import Login from "./pages/Login"
 import NotFound from "./pages/NotFound"
+import Speaker from './pages/Speaker.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')).render(
         <Route element={<SiteLayout />}>
           <Route index element={<Home />} />
           <Route path="/contato" element={<Contact />} />
+          <Route path="/palestrante/:slug" element={<Speaker />} />
         </Route>
 
         <Route element={<CenteredLayout />}>
