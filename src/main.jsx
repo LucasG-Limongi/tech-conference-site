@@ -10,6 +10,8 @@ import Register from "./pages/Register"
 import Login from "./pages/Login"
 import NotFound from "./pages/NotFound"
 import Speaker from './pages/Speaker.jsx'
+import Schedule from './pages/Schedule.jsx'
+import Speakers from './pages/Speakers.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,7 +20,11 @@ createRoot(document.getElementById('root')).render(
         <Route element={<SiteLayout />}>
           <Route index element={<Home />} />
           <Route path="/contato" element={<Contact />} />
-          <Route path="/palestrante/:slug" element={<Speaker />} />
+          <Route path="/palestrantes">
+            <Route index element={<Speakers />} />
+            <Route path=":slug" element={<Speaker />} />
+          </Route>
+          <Route path="/programacao/:dia?" element={<Schedule />} />
         </Route>
 
         <Route element={<CenteredLayout />}>
